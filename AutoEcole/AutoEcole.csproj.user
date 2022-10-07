@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Vues\Accueil.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\EleveAjouter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\EleveForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\EleveListe.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\LeconAjouter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\LeconForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\LeconListe.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\ModeleAjouter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\ModeleForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\ModeleListe.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\MoniteurAjouter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\MoniteurForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\MoniteurListe.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\Statistique.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\VehiculeAjouter.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\VehiculeForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vues\VehiculeListe.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\Accueil.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\EleveAjouter.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\EleveForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\EleveListe.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\LeconAjouter.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\LeconForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\LeconListe.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\ModeleAjouter.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\ModeleForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\ModeleListe.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\MoniteurAjouter.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\MoniteurForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\MoniteurListe.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\Statistique.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\VehiculeAjouter.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\VehiculeForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vues\VehiculeListe.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

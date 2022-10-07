@@ -1,0 +1,72 @@
+﻿<Page x:Class="AutoEcole.Vues.EleveListe"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoEcole.Vues"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EleveListe">
+
+    <Grid ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "23*" />
+            <RowDefinition Height = "225*" />
+            <RowDefinition Height ="181*"/>
+            <RowDefinition Height = "23*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Liste des élèves" Grid.Column="0" Grid.ColumnSpan="10" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="14" Background="#FF4D9BB5"/>
+
+
+        <ListView Name="listviewClients" Grid.Column="0" Grid.ColumnSpan="10" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,0" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id"        Width="0"   DisplayMemberBinding="{Binding IdElv}"/>
+                    <GridViewColumn Header="Nom"       Width="150" DisplayMemberBinding="{Binding NomElv}"/>
+                    <GridViewColumn Header="Prenom"    Width="150" DisplayMemberBinding="{Binding PrenomElv}"/>
+                    <GridViewColumn Header="Naissance" Width="150" DisplayMemberBinding="{Binding NaissanceElv, StringFormat=dd-MM-yyyy}"/>
+                    <GridViewColumn Header="Code"      Width="0"   DisplayMemberBinding="{Binding CodeElv}"/>
+                    <GridViewColumn Header="Conduite"  Width="0"   DisplayMemberBinding="{Binding ConduiteElv}"/>
+                    <GridViewColumn Width="150">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Détails" HorizontalAlignment="Center" Width="100" Click="EleveFormClick" Background="#FF4D9BB5"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="150">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Effacer" HorizontalAlignment="Center" Width="100" Click="EleveFormClick" Background="#FF4D9BB5"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="10" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top"  Margin="0,50,0,0">
+            <TextBox Name="Rechercher" ToolTip="rechercher un élève par nom" Text="" MinWidth="200" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" FontFamily="Arial" Width="125" Height="20"/>
+            <Button Content="Rechercher un élève" HorizontalAlignment="Center" MinWidth="200"  FontFamily="Arial" FontSize="14" FontWeight="Bold" Background="#FF4D9BB5" Click="EleveRechercherClick"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="10" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <Button Content="Ajouter un élève" HorizontalAlignment="Center" MinWidth="200" FontFamily="Arial" FontSize="14" FontWeight="Bold" Background="#FF4D9BB5" Click="EleveAjouterClick"/>
+        </StackPanel>
+
+    </Grid>
+</Page>

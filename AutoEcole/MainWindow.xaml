@@ -1,0 +1,79 @@
+﻿<Window x:Class="AutoEcole.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoEcole"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="900">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "5*" />
+            <RowDefinition Height = "90*" />
+            <RowDefinition Height = "5*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="10" Grid.Row="0" Orientation="Horizontal">
+            <Menu MinWidth="100" MinHeight="10" FontSize="15" FontWeight="Bold" FontStyle="Normal" HorizontalAlignment="Left" VerticalAlignment="Center">
+
+                <MenuItem Header="_Accueil" FontWeight="Normal" Click="AccueilClick"></MenuItem>
+
+                <MenuItem Header="_Élève" FontWeight="Normal">
+                    <MenuItem Header="_Lister" Click="EleveListeClick">
+                    </MenuItem>
+                    <MenuItem Header="_Ajouter" Click="EleveAjouterClick">
+                    </MenuItem>
+                </MenuItem>
+
+                <MenuItem Header="_Moniteur" FontWeight="Normal">
+                    <MenuItem Header="_Lister" Click="MoniteurListeClick">
+                    </MenuItem>
+                    <MenuItem Header="_Ajouter" Click="MoniteurAjouterClick">
+                    </MenuItem>
+                </MenuItem>
+
+                <MenuItem Header="_Véhicule" FontWeight="Normal">
+                    <MenuItem Header="_Lister Véhicule" Click="VehiculeListeClick">
+                    </MenuItem>
+                    <MenuItem Header="_Ajouter Véhicule" Click="VehiculeAjouterClick">
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="_Lister Modèle" Click="ModeleListeClick">
+                    </MenuItem>
+                    <MenuItem Header="_Ajouter Modèle" Click="ModeleAjouterClick">
+                    </MenuItem>
+                </MenuItem>
+
+                <MenuItem Header="_Leçon" FontWeight="Normal">
+                    <MenuItem Header="_Lister" Click="LeconListeClick">
+                    </MenuItem>
+                    <MenuItem Header="_Ajouter" Click="LeconAjouterClick">
+                    </MenuItem>
+                </MenuItem>
+                
+                <MenuItem Header="_Statistiques" FontWeight="Normal" Click="StatistiqueClick"></MenuItem>
+
+            </Menu>
+        </StackPanel>
+
+
+        <Frame x:Name="MainFrame" Grid.Column="0" Grid.ColumnSpan="10" Grid.Row="1" NavigationUIVisibility="Hidden" Background="LightGray" Source="/Vues/Accueil.xaml"/>
+
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" Orientation="Horizontal">
+            <Label Content=" " VerticalAlignment="Center" MinWidth="50" FontFamily="Comic Sans MS" FontSize="10" FontWeight="Bold" HorizontalAlignment="Right"/>
+        </StackPanel>
+    </Grid>
+</Window>

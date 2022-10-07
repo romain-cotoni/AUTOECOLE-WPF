@@ -1,0 +1,81 @@
+﻿<Page x:Class="AutoEcole.Vues.LeconForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoEcole.Vues"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LeconForm">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "23*" />
+            <RowDefinition Height = "225*" />
+            <RowDefinition Height = "181*"/>
+            <RowDefinition Height = "23*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+            <ColumnDefinition Width = "*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Leçons" Grid.Column="0" Grid.ColumnSpan="10" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="25" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontSize="14" Background="#FF4D9BB5"/>
+
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="10" Grid.Row="1" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
+
+            <TextBox x:Name="IdElv" Text="{Binding IdEleveLec}" Width="0"/>
+
+            <TextBox x:Name="IdMnt" Text="{Binding IdMoniteurLec}" Width="0"/>
+            
+            <Label Content="Prenom élève" VerticalAlignment="Center"  FontFamily="Arial" FontSize="14" FontWeight="Bold" Width="200" Height="25"/>
+            <TextBox x:Name="PrenomElv" Text="{Binding PrenomElv}" VerticalAlignment="Center" FontSize="14" FontWeight="Bold" FontFamily="Arial" Width="200" Height="25"/>
+
+            <Label Content="Nom élève" FontFamily="Arial" FontSize="14" FontWeight="Bold" Width="200" Height="25"/>
+            <TextBox x:Name="NomElv" Text="{Binding NomElv}" FontSize="14" FontWeight="Bold" FontFamily="Arial" Width="200" Height="25"/>
+
+            <Label Content="Prénom moniteur" FontFamily="Arial" FontSize="14" FontWeight="Bold" Width="200" Height="25"/>
+            <TextBox x:Name="PrenomMnt" Text="{Binding PrenomMnt}"  FontSize="14" FontWeight="Bold" FontFamily="Arial" Width="200" Height="25"/>
+
+            <Label Content="Nom moniteur" FontFamily="Arial" FontSize="14" FontWeight="Bold" Width="200" Height="25"/>
+            <TextBox x:Name="NomMnt" Text="{Binding NomMnt}"  FontSize="14" FontWeight="Bold" FontFamily="Arial" Width="200" Height="25"/>
+
+            <Label Content="Modèle véhicule" FontFamily="Arial" FontSize="14" FontWeight="Bold" Width="200" Height="25"/>
+            <TextBox x:Name="Modele" Text="{Binding ModelLec}"  FontSize="14" FontWeight="Bold" FontFamily="Arial" Width="200" Height="25"/>
+
+            <Label Content="Date" FontFamily="Arial" FontSize="14" FontWeight="Bold" Width="200" Height="25"/>
+            <DatePicker x:Name="DateHeure" Text="{Binding DateLec, StringFormat=dd-MM-yyyy}"  FontSize="14" FontWeight="Bold" FontFamily="Arial" Width="200" Height="25"/>
+
+            <Label Content="Durée" FontFamily="Arial" FontSize="14" FontWeight="Bold" Width="200" Height="25"/>
+            <TextBox x:Name="Duree" Text="{Binding DureeLec}"  FontSize="14" FontWeight="Bold" FontFamily="Arial" Width="200" Height="25"/>
+
+            <!--
+            <Label Content="Modèle véhicule" VerticalAlignment="Center"  FontFamily="Arial" FontSize="14" FontWeight="Bold" Width="200" Height="25"/>
+            <ComboBox x:Name="ModeleVehiculeCB" Width="120"/>
+
+            <Label Content="Moniteur" FontFamily="Arial" FontSize="14" FontWeight="Bold" Width="200" Height="25"/>
+            <ComboBox x:Name="IdMoniteurCB" Width="120"/>
+
+            <Label Content="Date" FontFamily="Arial" FontSize="14" FontWeight="Bold" Width="200" Height="25"/>
+            <ComboBox x:Name="DateHeureCB" Width="120"/>
+
+            <Label Content="Durée" FontFamily="Arial" FontSize="14" FontWeight="Bold" Width="200" Height="25"/>
+            <TextBox x:Name="Duree" Text="{Binding NaissanceElv, StringFormat=dd-MM-yyyy}"  FontSize="14" FontWeight="Bold" FontFamily="Arial" Width="200" Height="25"/>
+            -->
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="10" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <!--<Button Content="Modifier" HorizontalAlignment="Center" Width="100" Background="#FF4D9BB5" Click="UpdateClick"  Margin="0,0,5,0"/>-->
+            <Button Content="Effacer"  HorizontalAlignment="Center" Width="100" Background="#FF4D9BB5" Click="DeleteClick"/>
+        </StackPanel>
+    </Grid>
+</Page>

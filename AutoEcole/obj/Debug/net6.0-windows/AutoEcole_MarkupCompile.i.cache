@@ -1,0 +1,20 @@
+﻿AutoEcole
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\romai\OneDrive\VISUAL STUDIO PROJECT\AutoEcole\obj\Debug\net6.0-windows\
+AutoEcole
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+C:\Users\romai\OneDrive\VISUAL STUDIO PROJECT\AutoEcole\App.xaml
+18-1085237428
+
+42896417990
+195-1365822305
+MainWindow.xaml;Vues\Accueil.xaml;Vues\EleveAjouter.xaml;Vues\EleveForm.xaml;Vues\EleveListe.xaml;Vues\LeconAjouter.xaml;Vues\LeconForm.xaml;Vues\LeconListe.xaml;Vues\ModeleAjouter.xaml;Vues\ModeleForm.xaml;Vues\ModeleListe.xaml;Vues\MoniteurAjouter.xaml;Vues\MoniteurForm.xaml;Vues\MoniteurListe.xaml;Vues\Statistique.xaml;Vues\VehiculeAjouter.xaml;Vues\VehiculeForm.xaml;Vues\VehiculeListe.xaml;
+
+True
+
